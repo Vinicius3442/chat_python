@@ -35,7 +35,7 @@ Não são necessárias bibliotecas externas para este projeto.
 
 2.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
+    git clone https://github.com/Vinicius3442/chat_python
     ```
 
 3.  **Acesse a pasta do projeto:**
