@@ -1,70 +1,84 @@
-# Chatbot de TI - Projeto Python/Tkinter
+# Chatbot de TI | Assistente Virtual Python
 
-Projeto desenvolvido para o Curso Técnico de Desenvolvimento de Sistemas (SESI/SENAI), como parte do exercício de fixação da disciplina de IA.
+![Banner do Projeto](img/banner.jpg)
 
-O objetivo é uma aplicação desktop em Python que simula um chatbot inteligente, com foco em design de interface profissional, sistema de login e respostas simuladas sobre tópicos de Tecnologia da Informação.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Tkinter](https://img.shields.io/badge/Tkinter-GUI-blue?style=for-the-badge&logo=python&logoColor=white)
+![Badge Status](http://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=GREEN&style=for-the-badge)
 
-## Funcionalidades
+<br>
 
-O projeto cumpre todos os requisitos solicitados:
+> **Aplicação desktop robusta desenvolvida para o curso de Desenvolvimento de Sistemas (SESI/SENAI), simulando um assistente virtual com autenticação, temas dinâmicos e lógica de resposta.**
 
-* **Tela de Login:** Sistema de autenticação local com usuário e senha pré-definidos.
-* **Interface de Chat:** Uma interface de chat completa, com caixa de exibição com scroll e campo de entrada.
-* **Respostas Simuladas:** O bot responde a perguntas sobre TI (Python, IA, SQL, Redes, Hardware, etc.) usando uma lógica condicional local.
-* **Simulação de Resposta:** O chatbot possui um pequeno atraso de 1 segundo para simular o "raciocínio".
-* **Tema Escuro/Claro:** Um botão funcional para alternar instantaneamente o tema da aplicação entre modo claro e escuro.
-* **Formatação Profissional:** As mensagens do usuário e do bot são formatadas de forma distinta, com alinhamento, cores e ícones diferentes para fácil leitura.
+## Sobre o Projeto
 
----
+Este projeto é um exercício prático de **Inteligência Artificial e Design de Interface**. O objetivo foi criar um chatbot funcional que operasse localmente, simulando o comportamento de uma IA de suporte técnico.
 
-## Tecnologias Utilizadas
+Diferente de scripts simples de terminal, esta aplicação conta com uma **Interface Gráfica (GUI)** completa construída nativamente com `Tkinter`, focando na experiência do usuário (UX) com troca de temas e feedback visual.
 
-Este projeto foi construído com as seguintes tecnologias:
-
-* **Python 3:** Linguagem de programação principal.
-* **Tkinter:** Biblioteca padrão do Python para a criação de interfaces gráficas (GUI).
+![Screenshot Principal](./img/chat_claro.jpg)
+*Interface principal rodando no Modo Claro.*
 
 ---
 
-## Como Executar
+## Funcionalidades Principais
 
-Não são necessárias bibliotecas externas para este projeto.
+### 1. Sistema de Autenticação
+Segurança simulada para acesso ao sistema.
+* **Conceitos:** Validação condicional, ocultamento de caracteres (senha).
+* **Credenciais:** Usuário: `aluno` | Senha: `123`.
 
-1.  **Pré-requisitos:**
-    * Ter o [Python 3](https://www.python.org/downloads/) instalado. A biblioteca `Tkinter` já vem inclusa na instalação padrão do Python.
+### 2. Lógica de Chat & Delay
+O bot não responde instantaneamente, gerando uma sensação mais natural.
+* **Conceitos:** `time.sleep` (simulação de raciocínio), Estruturas condicionais aninhadas.
+* **Tópicos:** O bot reconhece palavras-chave sobre SQL, Redes, Hardware e Python.
 
-2.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/Vinicius3442/chat_python
-    ```
-
-3.  **Acesse a pasta do projeto:**
-    ```bash
-    cd SEU-REPOSITORIO
-    ```
-
-4.  **Execute o aplicativo:**
-    ```bash
-    python chatbot_app.py
-    ```
-    *(Ou `python3 chatbot_app.py`, dependendo da sua instalação)*
-
-5.  **Credenciais de Login:**
-    * **Usuário:** `aluno`
-    * **Senha:** `123`
-   
+### 3. Dark Mode Engine
+Alternância de temas em tempo real sem reiniciar a aplicação.
+* **Conceitos:** Manipulação de propriedades de widgets, gestão de estados de UI.
+* **Visual:** Ajuste automático de fundo, fonte e caixas de entrada.
 
 ---
 
-## Telas Desenvolvidas
+## Tecnologias e Conceitos Aplicados
 
-Conforme solicitado, aqui estão os prints das principais telas da aplicação.
+### Engenharia de Software
+* **Python 3:** Lógica core da aplicação.
+* **Tkinter:** Construção da interface gráfica (Janelas, Frames, Entry, Scrollbar).
+* **Lógica de Strings:** Tratamento de input do usuário (lower case, strip) para melhor reconhecimento de comandos.
 
-### 1. Tela de Login
-![Tela de Login](./img/login.jpg)
+---
 
-### 2. Tela de Chat (Modo Claro)
-![Tela de Chat - Modo Claro](./img/chat_claro.jpg)
+## Galeria
 
-### 3. Tela de Chat (Modo Escuro)
-![Tela de Chat - Modo Escuro](./img/escuro.jpg)
+<div align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img src="./img/login.jpg" alt="Tela de Login" width="45%" style="margin: 5px;">
+  <img src="./img/escuro.jpg" alt="Modo Escuro" width="45%" style="margin: 5px;">
+</div>
+
+---
+
+# Autor
+
+<div align="center">
+  <a href="https://github.com/Vinicius3442">
+    <img src="https://github.com/Vinicius3442.png" width="100px;" alt="Foto de Perfil do Vinícius Montuani" style="border-radius: 50%;"/>
+  </a>
+
+  <br />
+  
+  <h3>Vinícius Montuani</h3>
+
+  <p>
+    <em>Estudante de Desenvolvimento de Sistemas @ SENAI</em>
+  </p>
+
+  <br />
+
+  <a href="https://www.linkedin.com/in/vinicius-montuani" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+  </a>
+  <a href="https://github.com/Vinicius3442" target="_blank">
+    <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
+  </a>
+</div>
